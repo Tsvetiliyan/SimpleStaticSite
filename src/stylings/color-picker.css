@@ -1,0 +1,38 @@
+
+.color-picker-section {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    margin: 40px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.color-picker-section h3 {
+    color: #667eea;
+    margin-bottom: 20px;
+}
+
+.color-display {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    transition: background 0.3s ease;
+}
+
+.color-input {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.color-code {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #764ba2;
+    margin: 20px 0;
+}

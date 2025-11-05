@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Site</title>
+    <link rel="stylesheet" href="./stylings/main.css">
+    <link rel="stylesheet" href="./stylings/clock.css">
+    <link rel="stylesheet" href="./stylings/todo-list.css">
+    <link rel="stylesheet" href="./stylings/color-picker.css">
+    <link rel="stylesheet" href="./stylings/counter.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to My Website</h1>
+            <p class="subtitle">A simple, modern, and interactive site</p>
+        </header>
+
+        <div class="card-grid">
+            <div class="card">
+                <h2>🚀 Fast & Lightweight</h2>
+                <p>Built with pure HTML, CSS, and JavaScript. No frameworks, no bloat. Just clean, efficient code that loads instantly.</p>
+                <button class="btn" onclick="showAlert('Speed')">Learn More</button>
+            </div>
+
+            <div class="card">
+                <h2>🎨 Beautiful Design</h2>
+                <p>Modern gradient backgrounds, smooth animations, and a responsive layout that looks great on any device.</p>
+                <button class="btn" onclick="showAlert('Design')">Learn More</button>
+            </div>
+
+            <div class="card">
+                <h2>☁️ Cloud Ready</h2>
+                <p>Perfect for hosting on Cloudflare Pages. Deploy in seconds and enjoy global CDN distribution.</p>
+                <button class="btn" onclick="showAlert('Cloud')">Learn More</button>
+            </div>
+        </div>
+
+        <div class="clock-section">
+            <h3>⏰ Live Clock</h3>
+            <div class="clock-display" id="clock">00:00:00</div>
+            <div class="date-display" id="date">Loading...</div>
+        </div>
+
+        <div class="counter">
+            <h3>🔢 Interactive Counter Demo</h3>
+            <div class="count-display" id="counter">0</div>
+            <div class="counter-buttons">
+                <button class="btn" onclick="decrementCounter()">- Decrease</button>
+                <button class="btn" onclick="resetCounter()">Reset</button>
+                <button class="btn" onclick="incrementCounter()">+ Increase</button>
+            </div>
+        </div>
+
+        <div class="todo-section">
+            <h3>✅ Todo List</h3>
+            <div class="todo-input-container">
+                <input type="text" class="todo-input" id="todoInput" placeholder="Enter a new task..." onkeypress="handleTodoKeyPress(event)">
+                <button class="btn" onclick="addTodo()">Add Task</button>
+            </div>
+            <ul class="todo-list" id="todoList"></ul>
+        </div>
+
+        <div class="color-picker-section">
+            <h3>🎨 Color Picker</h3>
+            <div class="color-display" id="colorDisplay"></div>
+            <div class="color-code" id="colorCode">#667eea</div>
+            <input type="color" class="color-input" id="colorPicker" value="#667eea" onchange="updateColor()">
+        </div>
+
+        <footer>
+            <p>&copy; 2025 My Website. Built with ❤️</p>
+        </footer>
+    </div>
+
+    <script src="./js/clock.js"></script>
+    <script src="./js/counter.js"></script>
+    <script src="./js/todoList.js"></script>
+</body>
+</html>
