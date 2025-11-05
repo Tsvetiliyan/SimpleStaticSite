@@ -1,5 +1,5 @@
-.wrangler
-.node_modules
-.package-lock.json
-.package.json
-.wrangler.json
+.wrangler/
+node_modules/
+package-lock.json
+package.json
+wrangler.json
